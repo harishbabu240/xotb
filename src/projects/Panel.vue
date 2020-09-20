@@ -3,7 +3,7 @@
     <div class="title" @click="collapsePanel()">
       <span>{{ title }}</span>
     </div>
-    <div class="body" v-if="collapsable">
+    <div class="body">
       <slot></slot>
     </div>
     <div class="footer"></div>
@@ -17,7 +17,7 @@ export default {
   },
   props: {
     title: String,
-    collapsable: Boolean,
+    // collapsable: Boolean,
   },
   methods: {
     collapsePanel() {

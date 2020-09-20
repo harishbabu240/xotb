@@ -1,6 +1,7 @@
 export const LIBRARIES = [
   "buttons",
   "panel",
+  "accordion",
   "utility",
   "common",
   "tooltips",
@@ -14,7 +15,6 @@ export const LIBRARIES = [
   "file-upload",
   "tabs",
   "slider",
-  "accordion",
   "popovers",
   "progressbar",
   "spinner",
