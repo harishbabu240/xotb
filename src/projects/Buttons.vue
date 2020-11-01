@@ -1,12 +1,17 @@
 <template>
   <div class="button-container">
-    <button :class="type"><slot></slot></button>
+    <button :class="type" @click="callback()"><slot></slot></button>
   </div>
 </template>
 <script>
 export default {
   props: {
     type: String,
+  },
+  methods: {
+    callback: function () {
+      this.$emit("onClick", 'clicked');
+    },
   },
 };
 </script>
